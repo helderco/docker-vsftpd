@@ -19,6 +19,7 @@ COPY scripts/* /
 
 VOLUME ["/var/ftp"]
 EXPOSE 21 20
+EXPOSE 12020 12021 12022 12023 12024 12025
 
 ENTRYPOINT ["/init"]
 CMD ["vsftpd"]
