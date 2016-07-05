@@ -10,7 +10,7 @@ RUN mkdir -p /var/run/vsftpd/empty \
  && mkdir -p /etc/vsftpd \
  && mkdir -p /var/www \
  && mkdir -p /var/ftp \
- && chown -R www-data:www-data /var/www
+ && chown -R www-data:www-data /var/www \
  && cp /etc/vsftpd.conf /etc/vsftpd.orig
 
 COPY vsftpd.conf /etc/
